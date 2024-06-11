@@ -1,0 +1,10 @@
+CREATE DATABASE restaurant;
+USE restaurant;
+CREATE TABLE orders (
+ id INT AUTO_INCREMENT PRIMARY KEY,
+ table_number INT NOT NULL,
+ items TEXT NOT NULL,
+ subtotal DECIMAL(10, 2) NOT NULL,
+ total DECIMAL(10, 2) NOT NULL,
+ created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
